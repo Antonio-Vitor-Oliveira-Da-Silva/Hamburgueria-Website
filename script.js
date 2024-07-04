@@ -163,7 +163,7 @@ checkoutBtn.addEventListener("click", function() {
     }).join("");
 
     const message = encodeURIComponent(cartItems);
-    const phone = "2126678014";
+    const phone = "5585985244438";
 
     window.open(`https://wa.me/${phone}?text=${message}Endereço: ${addresInput.value}    |
     Preço Total: ${cartTotal.textContent}`, "_blank");
@@ -177,7 +177,7 @@ function checkRestaurantOpen(){
     const date = new Date();
     const hour = date.getHours();
     const day = date.getDay();
-    return hour >= 9 && hour < 22 && day >= 1 && day <= 6;
+    return hour >= 11 && hour < 22 && day >= 1 && day <= 6;
 }
 
 const spanItem = document.getElementById("date-span");

@@ -177,7 +177,7 @@ function checkRestaurantOpen(){
     const date = new Date();
     const hour = date.getHours();
     const day = date.getDay();
-    return hour >= 11 && hour < 22 && day >= 1 && day <= 6;
+    return hour >= 9 && hour < 22 && day >= 1 && day <= 6;
 }
 
 const spanItem = document.getElementById("date-span");

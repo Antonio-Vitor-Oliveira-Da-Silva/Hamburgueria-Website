@@ -1,67 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Author" content="Antonio Vitor Oliveira Da Silva" />
-    <meta name="Website Mobile" content="Hamburgueria" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Toastify JS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="BurguerTopia - O melhor hamburguer da região">
+    <meta property="og:image" content="https://cardapio-ivory.vercel.app/src/img/hamb-1.png">
+    <meta property="og:description" content="O melhor hamburguer caseiro">
+    <meta property="og:site_name" content="BurguerTopia">
 
-    <!-- Google Fonts - Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/output.css">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Meta Tags OG -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Antonio Burguer" />
-    <meta property="og:image" content="https://hamburgueria-website.vercel.app/assets/hamb-1.png" />
-    <meta property="og:description" content="A Melhor Hamburgueria do Nordeste!" />
-    <meta property="og:site_name" content="Antonio Burguer" />
-
-    <link rel="stylesheet" href="./styles/output.css" />
-
-    <title>Antonio Burguer - A Melhor Hamburgueria do Nordeste!</title>
+    <title>Antonio Burguer - Cardápio</title>
 </head>
 <body>
-    <!-- HEADER -->
-  <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
-    <div class="w-full h-full flex flex-col justify-center items-center">
-      <img 
-        src="./assets/hamb-1.png"
-        alt="Logo Antonio Burguer"
-        title="Logo Antonio Burguer"
-        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-      />
-      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
-        Antonio Burguer
-      </h1>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+                src="./assetshamb-1.png" 
+                alt="logo-burguer" 
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-300"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Antonio Burguer</h1>
+            <span class="text-white font-medium">Rua lorem, Rio de Janeiro - RJ</span>
+            <div class="bg-green-700 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg à Sáb - 9h às 22h</span>
+            </div>
 
-      <span class="text-white font-medium">Av. Fernando Dos Anjos, 1260 - Fortaleza-CE</span>
+        </div>
+    </header>
 
-      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Segunda-feira a Domingo - 11h a 22h</span>
-      </div>
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça Nosso Menu</h2>
 
-    </div>
-  </header>
-  <!-- FIM HEADER -->
-  
-  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
-    Conheça Nosso Menu
-  </h2>
-
-  <!-- INICIO MENU -->
-  <div id="menu">
-    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
             <div class="flex gap-2 items-center justify-center">
                 <img src="./assets/hamb-1.png" alt="hamburguer-1" 
                 class="w-28 h-28 rounded-md duration-300 hover:scale-110 hover:-rotate-2">
@@ -210,7 +191,7 @@
             </div>
         </main>
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-6">Bebidas</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-6">Bebidas</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
             <div class="flex gap-2">
@@ -280,8 +261,8 @@
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
     </footer>
-  
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-   <script src="script.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
